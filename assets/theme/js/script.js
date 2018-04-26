@@ -573,32 +573,31 @@
                     return top;
                 }
 
-                function checkIfInView() {
-                    var window_height = window.innerHeight;
-                    var window_top_position = document.documentElement.scrollTop || document.body.scrollTop;
-                    var window_bottom_position = window_top_position + window_height - 50;
-
-                    $.each($animatedElements, function() {
-                        var $element = $(this);
-                        var element = $element[0];
-                        var element_height = element.offsetHeight;
-                        var element_top_position = getElementOffset(element);
-                        var element_bottom_position = (element_top_position + element_height);
-
-                        // check to see if this current element is within viewport
-                        if ((element_bottom_position >= window_top_position) &&
-                            (element_top_position <= window_bottom_position) &&
-                            ($element.hasClass('hidden'))) {
-                            $element.removeClass('hidden').addClass('fadeInUp')
-                                .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                                    $element.removeClass('animated fadeInUp');
-                                });
-                        }
-                    });
-                }
+                // function checkIfInView() {
+                //     var window_height = window.innerHeight;
+                //     var window_top_position = document.documentElement.scrollTop || document.body.scrollTop;
+                //     var window_bottom_position = window_top_position + window_height - 50;
+                //
+                //     $.each($animatedElements, function() {
+                //         var $element = $(this);
+                //         var element = $element[0];
+                //         var element_height = element.offsetHeight;
+                //         var element_top_position = getElementOffset(element);
+                //         var element_bottom_position = (element_top_position + element_height);
+                //
+                //         // check to see if this current element is within viewport
+                //         if ((element_bottom_position >= window_top_position) &&
+                //             (element_top_position <= window_bottom_position) &&
+                //             ($element.hasClass('hidden'))) {
+                //             $element.removeClass('hidden').addClass('fadeInUp')
+                //                 .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                //                     $element.removeClass('animated fadeInUp');
+                //                 });
+                //         }
+                //     });
+                // }
 
                 var $window = $(window);
-                $window.on('scroll resize', checkIfInView);
                 $window.trigger('scroll');
             }
         });
