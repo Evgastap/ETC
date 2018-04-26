@@ -11,72 +11,48 @@
   -o-animation-fill-mode: forwards;      /* Not implemented yet */
   -ms-animation-fill-mode: forwards;     /* IE 10+ */
   animation-fill-mode: forwards;         /* When the spec is finished */
-  animation: logofade 2s ease-in;
  }
 
  #Top {
    opacity: 0;
-   animation: logofade 0.5s ease-in;
-   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-   -moz-animation-fill-mode: forwards;    /* FF 5+ */
-   -o-animation-fill-mode: forwards;      /* Not implemented yet */
-   -ms-animation-fill-mode: forwards;     /* IE 10+ */
-   animation-fill-mode: forwards;
+   /* animation: logofade 0.5s ease-in;
+
+   animation-fill-mode: forwards; */
    animation-delay: 1s;
  }
 
  #Right {
    opacity: 0;
-   animation: logofade 0.5s ease-in;
-   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-   -moz-animation-fill-mode: forwards;    /* FF 5+ */
-   -o-animation-fill-mode: forwards;      /* Not implemented yet */
-   -ms-animation-fill-mode: forwards;     /* IE 10+ */
-   animation-fill-mode: forwards;
+   /* animation: logofade 0.5s ease-in; */
+   /* -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */ */
+   /* -moz-animation-fill-mode: forwards;    /* FF 5+ */ */
+   /* -o-animation-fill-mode: forwards;      /* Not implemented yet */ */
+   /* -ms-animation-fill-mode: forwards;     /* IE 10+ */ */
+   /* animation-fill-mode: forwards; */
    animation-delay: 1.1s;
  }
 
  #Left {
    opacity: 0;
-   animation: logofade 0.5s ease-in;
-   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-   -moz-animation-fill-mode: forwards;    /* FF 5+ */
-   -o-animation-fill-mode: forwards;      /* Not implemented yet */
-   -ms-animation-fill-mode: forwards;     /* IE 10+ */
-   animation-fill-mode: forwards;
+   /* animation: logofade 0.5s ease-in; */
    animation-delay: 1.2s;
  }
 
  #Right-inside {
    opacity: 0;
-   animation: logofade 0.5s ease-in;
-   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-   -moz-animation-fill-mode: forwards;    /* FF 5+ */
-   -o-animation-fill-mode: forwards;      /* Not implemented yet */
-   -ms-animation-fill-mode: forwards;     /* IE 10+ */
-   animation-fill-mode: forwards;
+   /* animation: logofade 0.5s ease-in; */
    animation-delay: 1.3s;
  }
 
  #Left-inside {
    opacity: 0;
-   animation: logofade 0.5s ease-in;
-   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-   -moz-animation-fill-mode: forwards;    /* FF 5+ */
-   -o-animation-fill-mode: forwards;      /* Not implemented yet */
-   -ms-animation-fill-mode: forwards;     /* IE 10+ */
-   animation-fill-mode: forwards;
+   /* animation: logofade 0.5s ease-in; */
    animation-delay: 1.4s;
  }
 
  #Middle {
    opacity: 0;
-   animation: logofade 0.5s ease-in;
-   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-   -moz-animation-fill-mode: forwards;    /* FF 5+ */
-   -o-animation-fill-mode: forwards;      /* Not implemented yet */
-   -ms-animation-fill-mode: forwards;     /* IE 10+ */
-   animation-fill-mode: forwards;
+   /* animation: logofade 0.5s ease-in; */
    animation-delay: 1.5s;
  }
 
