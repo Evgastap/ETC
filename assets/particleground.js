@@ -8,6 +8,14 @@
  * Inspired by http://requestlab.fr/ and http://disruptivebydesign.com/
  */
 
+ $.fn.isInViewport = function() {
+   var elementTop = $(this).offset().top;
+   var elementBottom = elementTop + $(this).outerHeight();
+   var viewportTop = $(window).scrollTop();
+   var viewportBottom = viewportTop + $(window).height();
+   return elementBottom > viewportTop && elementTop < viewportBottom;
+   };
+
 ;(function(window, document) {
   "use strict";
   var pluginName = 'particleground';
@@ -79,17 +87,10 @@
       }, false);
 
       document.addEventListener('mousemove', function(e) {
-        // $(window).on(‘resize scroll’, function() {
-        //   $.fn.isInViewport = function() {
-        //     var elementTop = $(this).offset().top;
-        //     var elementBottom = elementTop + $(this).outerHeight();
-        //     var viewportTop = $(window).scrollTop();
-        //     var viewportBottom = viewportTop + $(window).height();
-        //     return elementBottom > viewportTop && elementTop < viewportBottom;
-        //     };
-        // });
-        mouseX = e.pageX;
-        mouseY = e.pageY;
+        if ($(".landing-block").isInViewport()) {
+          mouseX = e.pageX;
+          mouseY = e.pageY;
+        };
       }, false);
 
       if (orientationSupport && !desktop) {
